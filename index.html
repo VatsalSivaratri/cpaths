@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-PATHs</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- JavaScript Links -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body background>
+    <section class="sec-00" id="sec-00">
+        <header>
+          <a href="#" class="logo"><img src="CPATHS Srijan Logo.png" alt="C-PATHS Logo" width="250" height="auto"></a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sec-01">The Problem</a></li>
+            <li><a href="#sec-02">Our Solution</a></li>
+            <li><a href="#sec-06">Implementation</a></li>
+            <li><a href="#authorembed">Authors</a></li>
+            <li><a href="mailto:vatsal.sivaratri@gmail.com">Contact Us</a></li>
+          </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+          window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+          })
+        </script>
+        <h2 class="main-title">C-PATHS</h2>
+        <p class="subheading">Unlocking the future of cardiopulmonary health.</p>
+        <div class="arrowbounce">
+          <a href="#sec-01" style="color: inherit"><i class="fa fa-arrow-down fa-2x" href="#sec-01" style="transform: translate(0px, 200px);"></i></a>
+        </div>
+    </section>
+    <section class="sec-01" id="sec-01">
+      <div class="container">
+        <div class="section-title"><strong>The Problem</strong></div>
+        <div class="content">
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Every year, heart and lung diseases take the lives of millions around the globe. Diseases like Cardiovascular Disease (CVD), COPD, and Asthma affect more than a billion people worldwide, reducing their quality of life and increasing their risk for premature death.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Current Solutions</h3>
+            <p>Current methods of managing these diseases involve tests performed at doctor’s offices and a review of the patient’s medical history. Unfortunately, this approach is plagued with flaws. They address the condition too late in its progression for easy treatment plans. On top of this, doctor’s lack historical information of a patient’s condition in their home setting, rendering them unable to offer sufficient and specific treatment plans.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </section>
+    <section class="sec-02", id="sec-02">
+      <div class="container">
+        <div class="section-title"><strong>Our Solution</strong></div>
+        <div class="content">
+          <div class="text-box">
+            <h3>Overview</h3>
+            <p>Every year, heart and lung diseases take the lives of millions around the globe. Diseases like Cardiovascular Disease (CVD), COPD, and Asthma affect more than a billion people worldwide, reducing their quality of life and increasing their risk for premature death. Current methods of managing these diseases involve tests performed at doctor’s offices and a review of the patient’s medical history. Unfortunately, this approach is plagued with flaws. They address the condition too late in its progression for easy treatment plans. On top of this, doctor’s lack historical information of a patient’s condition in their home setting, rendering them unable to offer sufficient and specific treatment plans.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Why Us?</h3>
+            <p>Every year, heart and lung diseases take the lives of millions around the globe. Diseases like Cardiovascular Disease (CVD), COPD, and Asthma affect more than a billion people worldwide, reducing their quality of life and increasing their risk for premature death. Current methods of managing these diseases involve tests performed at doctor’s offices and a review of the patient’s medical history. Unfortunately, this approach is plagued with flaws. They address the condition too late in its progression for easy treatment plans. On top of this, doctor’s lack historical information of a patient’s condition in their home setting, rendering them unable to offer sufficient and specific treatment plans.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class="sec-03">
+      <div class="section-title"><strong>5-Step Implementation</strong></div>
+      <div class="button-container">
+        <div class="dropdown">
+          <button class="dropbtn">Step 1</button>
+          <div class="dropdown-content">
+            <p>Description of Step 1</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Step 2</button>
+          <div class="dropdown-content">
+            <p>Description of Step 2</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Step 3</button>
+          <div class="dropdown-content">
+            <p>Description of Step 3</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Step 4</button>
+          <div class="dropdown-content">
+            <p>Description of Step 4</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Step 5</button>
+          <div class="dropdown-content">
+            <p>Description of Step 5</p>
+          </div>
+        </div>
+      </div>      
+
+    </section>
+
+    
+<div class="container">
+  <div class="content">
+    <div class="authorembed" id="authorembed">
+      <embed src="parallax/index.html" width="1865px" height="624px">
+    </div>
+  </div>
+</div>
+
+
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      
+      ScrollReveal().reveal('.section-title', { delay: 100, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .sec-01 .imghvr-zoom-in', { delay: 100, origin: 'bottom' });
+      ScrollReveal().reveal('.sec-02 .mapheading .mapsub', {delay:600, origin: 'bottom' });
+      ScrollReveal().reveal('.sec-02 .image', {delay:100, origin:'top'});
+      ScrollReveal().reveal('.sec-02 .mapcaption', {delay:100, origin:'right'});
+      ScrollReveal().reveal('.sec-69 .text-box', {delay:100, origin:'right'});
+      ScrollReveal().reveal('.sec-69 .section-title, .sec-69 .subheading', {delay:100, origin:'left'});
+      ScrollReveal().reveal('.text-box', { delay: 100, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 100, origin: 'bottom', interval: 100 });
+      ScrollReveal().reveal('.sec-04 .image1, .sec-04 .image2', { delay: 100, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 100, origin: 'left', interval: 100 });
+    </script>
+
+  </body>
+</html>
