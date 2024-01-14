@@ -11,10 +11,11 @@
 
 html{
   scroll-behavior: smooth;
+  background: rgb(232, 207, 207);
 }
 
 body{
-  background: rgb(230, 233, 245);
+  background: rgb(232, 207, 207);
 }
 
 section{
@@ -38,15 +39,15 @@ section{
 
 .sec-00 .subheading{
   font-size: 20px;
-  width: 57ch;
+  width: 46ch;
   position: absolute;
   margin-top: 300px;
   overflow: hidden;
-  border-right: .15em solid #fff;
+  border-right: .10em solid rgb(232, 207, 207);
   white-space: nowrap;
-  letter-spacing: .15em;
+  letter-spacing: .10em;
   transform: translate(0px, 200px);
-  animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2.0s steps(10), blink .5s step-end infinite alternate;
 }
 
 
@@ -62,6 +63,7 @@ section{
 .sec-01 .text-box{
   width: 400px;
   margin-left: 50px;
+  height: 500px;
 }
 
 .sec-02{
@@ -75,6 +77,15 @@ section{
   flex-direction: column;
 }
 
+
+.sec-04{
+  margin-top: 200px;
+  margin-bottom: 400px;
+}
+
+.sec-04 .text-box{
+  max-width: 500px;
+}
 
 .button-container {
   display: flex;
@@ -90,7 +101,7 @@ section{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(232, 207, 207);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
@@ -188,6 +199,8 @@ section{
 }
 
 
+
+
 .section-title{
   font-size: 3em;
   margin-bottom: 80px;
@@ -208,11 +221,11 @@ header{
   transition: 0.6s;
   padding: 40px 100px;
   z-index: 10000000;
-  background-color: #508CA4;
+  background-color: #9bb8c3;
 }
 header.sticky{
   padding: 5px 100px;
-  background: #508CA4;
+  background: #9bb8c3;
 }
 
 header .logo{
@@ -501,7 +514,7 @@ header {
 
 
 
-/* Reference shit */
+/* Reference stuff */
 
 
 
