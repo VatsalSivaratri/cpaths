@@ -58,33 +58,65 @@ section{
 
 .sec-01, .section-title{  
   margin-top: 200px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
+}
+
+.sec-01{
+  margin: 100px;
 }
 .sec-01 .text-box{
   width: 400px;
   margin-left: 50px;
-  height: 500px;
+  height: 650px;
 }
 
+.sec-01 .imgintextbox{
+  align-items: center;
+}
+
+
 .sec-02{
-  margin-top: 200px;
-  margin-bottom: 800px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .sec-03{
-  margin-top: 200px;
-  margin-bottom: 800px;
+  margin-bottom: 200px;
   flex-direction: column;
 }
 
+.stats{
+  margin-bottom: 50px;
+}
+.stats img{
+  border-radius: 3%;
+}
 
 .sec-04{
   margin-top: 200px;
   margin-bottom: 400px;
 }
 
-.sec-04 .text-box{
+.sec-03 .text-box{
   max-width: 500px;
+  margin: 20px;
+}
+
+.sec-03 .imgrow img{
+  max-width: 300px;
+  padding: 50px;
+}
+
+.sec-04 .section-title{
+  margin: 100px;
+}
+.sec-04 iframe{
+  margin-top: 100px;
+}
+
+
+.sec-05{
+  margin-bottom: 300px;
 }
 
 .button-container {
@@ -95,19 +127,21 @@ section{
 .dropdown {
   position: relative;
   display: inline-block;
-  padding: 4em
+  padding: 2em
 }
+
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: rgb(232, 207, 207);
-  min-width: 160px;
+  background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  padding: 10px;
+  position: absolute;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Adjust the maximum width as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
 }
-
 .dropbtn:hover .dropdown-content {
   display: block;
 }
@@ -116,19 +150,35 @@ section{
   font-family: "Poppins", sans-serif; /* Match the font style */
   font-size: 2em; /* Adjust as per your text style */
   font-weight: 500; /* Adjust based on your heading weights */
-  padding: 10px 15px; /* Adjust to get the circular shape */
+  /* padding: 10px 15px; Adjust to get the circular shape */
   border-radius: 50%;
   border: 2px solid #000; /* Border color as per your choice */
   background-color: transparent; /* Adjust background color */
   color: #000; /* Text color */
   cursor: pointer;
+  height: 150px;
+  width: 150px;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
 .dropbtn:hover {
-  background-color: #0088a9; /* Change on hover */
+  background-color: #9bb8c3; /* Change on hover */
   color: #000;
 }
+
+
+.up-arrow::after {
+  content: "\25B2"; /* Unicode character for an up arrow */
+  float: right;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show {
+  display: block;
+  transform: scaleY(1); /* Scale the dropdown to full height */
+}
+
+
 
 
 .images{
@@ -139,6 +189,21 @@ section{
 
 
 
+.imgrow{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.sec-01 .imgrow{
+  transform: translate(30px);
+}
+
+.sec-02 .text-box{
+  width: 500px;
+}
 
 
 
@@ -153,7 +218,7 @@ section{
 
 .main-title{
   position: absolute;
-  font-size: 4em;
+  font-size: 5em;
   margin-bottom: 10px;
   margin-top: 500px;
 }
